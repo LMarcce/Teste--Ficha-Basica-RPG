@@ -4,11 +4,10 @@ algoritmo "FichaBasicaRPG"
 // Data : 30/11/2017
 // Seção de Declarações 
 var
-Sexo:Caractere
-Menino,Menina:Logico
 Nome, Profissao, Regiao: Caractere
 Idade: Inteiro
 Altura: Real
+Sexo:
 
 inicio
 // Seção de Comandos 
@@ -20,14 +19,14 @@ Escreval("responsavel dos centros de pesquisa e inicialização de novo treinadore
 
 Escreval("Primeiramente, diga-me...qual o seu nome?")
    Leia (nome)
-Escreval ("Certo...certo...mas...você é um Menino ou uma Menina?")
-   Leia (Sexo)
-   Sexo <- Menina ou Menino
-   Se Sexo = Menino entao
+   
+Escreval ("Certo...certo...mas...você é Menino ou Menina?")
+
+   "Menino"
 Escreval ("Ah sim, tudo bem rapaz...vamos prosseguir!")
-  Senao
+   "Menina"
 Escreval ("Okay senhorita, vamos continuar!")
-         FimSe
+   FimEscolha
 
 
 fimalgoritmo
